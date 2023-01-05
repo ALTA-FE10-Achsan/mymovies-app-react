@@ -28,7 +28,7 @@ function Favorit() {
   return (
     <Layout>
       <div>
-        <div className="lg:h-44 md:h-40 h-40 w-full flex justify-center items-end">
+        <div className=" w-full flex justify-center items-end">
           <h1 className="lg:text-7xl md:text-5xl text-3xl font-rubikDistressed p-5 text-gray-600 dark:text-white">Favorite</h1>
         </div>
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2">

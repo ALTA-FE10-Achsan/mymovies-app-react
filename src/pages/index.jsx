@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Loading from "../components/Loading";
 import { useDispatch } from "react-redux";
 import { setFavorites } from "../utils/reducers/reducer";
+import Slider from "../components/Slider";
 
 function Home() {
   const [datas, setData] = useState([]);
@@ -66,8 +67,11 @@ function Home() {
 
   return (
     <Layout>
+      <div className="carousel w-full rounded-sm ">
+        {loading ? <Loading /> : datas ? datas.map((item) => <Slider length={datas.length} image={item.backdrop_path} alt={item.title} id={datas.map((datum) => datum.id).indexOf(item.id) + 1} key={item.id} />) : <p>noting</p>}
+      </div>
       <div className="flex w-full flex-col bg-abuTua dark:bg-blackTwo">
-        <div className="lg:h-44 md:h-40 h-40 w-full flex justify-center items-end">
+        <div className=" w-full flex justify-center items-end">
           <h1 className="lg:text-7xl md:text-5xl text-3xl font-rubikDistressed p-5 text-gray-600 dark:text-white">NOW PLAYING</h1>
         </div>
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 ">

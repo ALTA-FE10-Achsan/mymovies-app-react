@@ -76,7 +76,7 @@ function Detail() {
 
   return (
     <Layout>
-      <div className="lg:mt-0 mt-20 w-full h-full">
+      <div className="lg:mt-0  w-full h-full">
         <div className="w-full lg:h-full ">
           {loading ? (
             <Loading />

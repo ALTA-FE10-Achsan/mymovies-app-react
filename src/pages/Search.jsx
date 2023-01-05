@@ -72,7 +72,7 @@ function Search() {
   return (
     <Layout>
       <div className="className= flex w-full flex-col bg-abuTua dark:bg-blackTwo">
-        <div className="h-44 w-full flex justify-center items-end">
+        <div className="w-full flex justify-center items-end">
           <h1 className="lg:text-7xl md:text-5xl text-3xl font-rubikDistressed p-5 text-gray-600 dark:text-white">{location.state.title}</h1>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-5">

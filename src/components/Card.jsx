@@ -9,7 +9,7 @@ function Card({ image, tombol, title, onNavigate, onClick, labeHtml }) {
         </figure>
         <div>
           <div className="h-14 p-1 w-full flex justify-center items-center" onClick={onNavigate}>
-            <h1 className="font-semibold text-center dark:text-white lg:text-base md:text-base text-sm">{title}</h1>
+            <h1 className="font-semibold text-center dark:text-white lg:text-base md:text-base text-sm uppercase">{title}</h1>
           </div>
           <div className="card-actions justify-center items-center p-1">
             <button className="btn card w-full lg:text-base md:text-base text-sm" onClick={onClick}>
